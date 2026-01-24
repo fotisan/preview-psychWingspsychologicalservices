@@ -1,897 +1,422 @@
-/* =========================
-   PsychWings • Mobile First
-   ========================= */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Therapy & Neurofeedback in Clifton, NJ | Park Avenue Psychotherapy Associates</title>
+  <meta name="description" content="Evidence-based therapy for anxiety, trauma, OCD and ADHD in Clifton, NJ. EMDR and neurofeedback options. Telehealth availability. Request a consult today." />
+  <meta name="theme-color" content="#f7f3ea" />
 
-:root{
-  --bg: #0B1324;
-  --panel: rgba(255,255,255,.06);
-  --card: rgba(255,255,255,.08);
-  --stroke: rgba(255,255,255,.12);
+  <link rel="preload" as="image" href="assets/miriam-adler.jpg" imagesrcset="assets/miriam-adler.jpg 1x" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  --text: rgba(255,255,255,.92);
-  --muted: rgba(255,255,255,.72);
-  --soft: rgba(255,255,255,.60);
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  --ink: #0B1324;
-  --paper: #F8F6F1;
-  --paper-2: #F2EFE8;
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- simple “sunflower-ish” mark (inline svg, lightweight) -->
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="g" cx="50%" cy="50%" r="60%">
+                <stop offset="0" stop-color="#F6D77A"/>
+                <stop offset="1" stop-color="#E9B84A"/>
+              </radialGradient>
+            </defs>
+            <circle cx="32" cy="32" r="10" fill="url(#g)"/>
+            <g fill="#F1C65D">
+              <path d="M32 2c4 6 4 10 0 16-4-6-4-10 0-16z"/>
+              <path d="M32 62c4-6 4-10 0-16-4 6-4 10 0 16z"/>
+              <path d="M2 32c6-4 10-4 16 0-6 4-10 4-16 0z"/>
+              <path d="M62 32c-6-4-10-4-16 0 6 4 10 4 16 0z"/>
+              <path d="M10 10c7 1 10 4 11 11-7-1-10-4-11-11z"/>
+              <path d="M54 54c-7-1-10-4-11-11 7 1 10 4 11 11z"/>
+              <path d="M54 10c-1 7-4 10-11 11 1-7 4-10 11-11z"/>
+              <path d="M10 54c1-7 4-10 11-11-1 7-4 10-11 11z"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Park Avenue Psychotherapy</span>
+          <span class="brand-sub">Therapy & Neurofeedback · Clifton, NJ</span>
+        </span>
+      </a>
 
-  --accent: #F2C14E;   /* warm gold */
-  --accent-2: #E46A4A; /* warm red coral */
-  --cool: #7AA6FF;     /* subtle blue for trust, used sparingly */
+      <!-- CSS-only mobile menu -->
+      <input class="nav-toggle" type="checkbox" id="navToggle" aria-label="Open menu" />
+      <label class="nav-burger" for="navToggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
 
-  --radius: 18px;
-  --radius-lg: 24px;
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#specialties">Focus Areas</a>
+        <a href="#team">Our Team</a>
+        <a href="#faq">Common Questions</a>
+        <a class="nav-cta" href="#contact">Request a Consult</a>
+      </nav>
+    </div>
+  </header>
 
-  --shadow: 0 20px 50px rgba(0,0,0,.28);
-  --shadow-soft: 0 14px 35px rgba(0,0,0,.18);
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Therapy & Neurofeedback in Clifton, NJ · Telehealth available</p>
 
-  --container: 1120px;
-}
+          <h1>
+            Feel steady again,<br />
+            with a plan that fits you.
+          </h1>
 
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(900px 500px at 20% -10%, rgba(242,193,78,.20), transparent 60%),
-    radial-gradient(900px 500px at 80% 10%, rgba(122,166,255,.16), transparent 60%),
-    radial-gradient(900px 700px at 50% 110%, rgba(228,106,74,.14), transparent 60%),
-    var(--bg);
-  line-height:1.45;
-}
+          <p class="lead">
+            Evidence-based therapy for anxiety, trauma, OCD, ADHD, and mood concerns.
+            We move at your pace, with practical tools you can use between sessions.
+          </p>
 
-img{ max-width:100%; display:block; }
-a{ color:inherit; text-decoration:none; }
-p{ margin:0; }
-h1,h2,h3{ margin:0; letter-spacing:-.02em; }
-h1{ font-size: clamp(2.1rem, 3.7vw, 3.2rem); line-height:1.05; }
-h2{ font-size: clamp(1.6rem, 2.7vw, 2.2rem); line-height:1.15; }
-h3{ font-size: 1.05rem; line-height:1.2; }
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Request a consult</a>
+            <a class="btn ghost" href="tel:+19738150777">Call (973) 815-0777</a>
+          </div>
 
-.container{
-  width: min(100% - 2rem, var(--container));
-  margin-inline:auto;
-}
+          <div class="trust-row" aria-label="Practice highlights">
+            <div class="trust-pill">
+              <span class="dot" aria-hidden="true"></span>
+              Adult therapy · older adolescents
+            </div>
+            <div class="trust-pill">
+              <span class="dot" aria-hidden="true"></span>
+              EMDR & neurofeedback options
+            </div>
+            <div class="trust-pill">
+              <span class="dot" aria-hidden="true"></span>
+              Evening availability (Mon–Thu)
+            </div>
+          </div>
 
-.skip-link{
-  position:absolute;
-  left:-999px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-}
-.skip-link:focus{
-  left: 1rem;
-  top: 1rem;
-  width:auto;
-  height:auto;
-  padding:.75rem 1rem;
-  border-radius: 12px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18);
-  box-shadow: var(--shadow-soft);
-  z-index: 9999;
-}
+          <p class="fine">
+            Please don’t include sensitive health details in the contact form. We’ll guide you from there.
+          </p>
+        </div>
 
-/* Header */
-.site-header{
-  position: sticky;
-  top:0;
-  z-index: 50;
-  backdrop-filter: blur(14px);
-  background: rgba(11,19,36,.72);
-  border-bottom: 1px solid rgba(255,255,255,.08);
-}
+        <aside class="hero-card" aria-label="Quick details">
+          <div class="card-top">
+            <div class="portrait">
+              <img src="assets/miriam-adler.jpg" alt="Portrait photo of Dr. Miriam Adler" loading="eager" />
+            </div>
 
-.header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: .9rem;
-  padding: .85rem 0;
-}
+            <div class="card-title">
+              <p class="name">Dr. Miriam Adler, PhD</p>
+              <p class="role">Executive Director</p>
+            </div>
+          </div>
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:.65rem;
-  min-width: 220px;
-}
-.brand-mark{
-  width: 40px;
-  height: 40px;
-  display:grid;
-  place-items:center;
-  border-radius: 14px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: 0 12px 30px rgba(0,0,0,.18);
-  color: rgba(242,193,78,.95);
-}
-.brand-mark svg{ width: 26px; height: 26px; }
-.brand-text{ display:flex; flex-direction:column; line-height:1.05; }
-.brand-name{ font-weight: 700; letter-spacing:-.02em; }
-.brand-sub{ font-size: .85rem; color: var(--muted); }
+          <div class="card-body">
+            <div class="kv">
+              <p class="k">Location</p>
+              <p class="v">777 Passaic Avenue, 5th Floor · Clifton, NJ</p>
+            </div>
+            <div class="kv">
+              <p class="k">Phone</p>
+              <p class="v"><a href="tel:+19738150777">(973) 815-0777</a> <span class="muted">ext. 101</span></p>
+            </div>
+            <div class="kv">
+              <p class="k">Email</p>
+              <p class="v"><a href="mailto:drmiriam@miriamadlertherapy.com">drmiriam@miriamadlertherapy.com</a></p>
+            </div>
 
-.header-cta{ display:none; }
+            <div class="card-cta">
+              <a class="btn primary full" href="#contact">Check availability</a>
+              <p class="micro">In-person in Clifton · Online sessions available</p>
+            </div>
+          </div>
+        </aside>
+      </div>
 
-.pill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding: .62rem .9rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,255,255,.14);
-  color: rgba(255,255,255,.92);
-  font-weight: 650;
-  white-space:nowrap;
-}
+      <div class="hero-wash" aria-hidden="true"></div>
+    </section>
 
-/* Mobile nav */
-.nav-toggle{ position:absolute; opacity:0; pointer-events:none; }
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="shell">
+        <header class="section-head">
+          <h2>Services</h2>
+          <p class="sub">
+            A calm, structured approach that blends warmth with real progress.
+          </p>
+        </header>
 
-.nav-burger{
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.08);
-  display:grid;
-  place-items:center;
-  cursor:pointer;
-}
-.nav-burger span{
-  width: 18px;
-  height: 2px;
-  background: rgba(255,255,255,.85);
-  display:block;
-  border-radius: 2px;
-  margin: 2px 0;
-}
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Therapy for Anxiety & Panic</h3>
+            <p>
+              Learn how to interrupt spirals, calm the body, and build confidence in the moments that usually feel overwhelming.
+            </p>
+          </article>
 
-.site-nav{
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  top: calc(100% + .6rem);
-  padding: .75rem;
-  border-radius: 18px;
-  background: rgba(15,23,42,.92);
-  border: 1px solid rgba(255,255,255,.14);
-  box-shadow: var(--shadow);
-  display: none;
-  gap: .35rem;
-}
-.site-nav a{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: .9rem .9rem;
-  border-radius: 14px;
-  color: rgba(255,255,255,.90);
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
-}
-.site-nav a:focus-visible,
-.site-nav a:hover{
-  outline: none;
-  border-color: rgba(242,193,78,.35);
-  background: rgba(242,193,78,.10);
-}
-.site-nav .nav-cta{
-  background: rgba(242,193,78,.14);
-  border-color: rgba(242,193,78,.28);
-  color: rgba(255,255,255,.95);
-  font-weight: 700;
-}
-.nav-toggle:checked ~ .site-nav{ display:grid; }
+          <article class="card">
+            <h3>OCD Support (ERP-informed)</h3>
+            <p>
+              A practical path for intrusive thoughts and compulsions, built around clarity, compassion, and steady momentum.
+            </p>
+          </article>
 
-/* Hero */
-.hero{
-  position:relative;
-  padding: 3.1rem 0 2.3rem;
-}
-.hero-grid{
-  display:grid;
-  gap: 1.25rem;
-}
+          <article class="card">
+            <h3>Adult ADHD & Attention</h3>
+            <p>
+              Systems for focus, follow-through, time management, and the emotional weight that often comes with “trying harder.”
+            </p>
+          </article>
+        </div>
 
-.microline{
-  display:inline-flex;
-  align-items:center;
-  gap:.5rem;
-  font-size: .95rem;
-  color: rgba(255,255,255,.78);
-  padding: .35rem .7rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
-  margin-bottom: 1rem;
-}
+        <div class="section-cta">
+          <div class="cta-band">
+            <div>
+              <p class="cta-title">Not sure where you fit?</p>
+              <p class="cta-sub">Tell us what’s going on. We’ll recommend the next best step.</p>
+            </div>
+            <a class="btn primary" href="#contact">Send a message</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.subhead{
-  margin-top: 1rem;
-  color: rgba(255,255,255,.78);
-  font-size: 1.05rem;
-  max-width: 60ch;
-}
+    <!-- SPECIALTIES -->
+    <section class="section alt" id="specialties">
+      <div class="shell">
+        <header class="section-head">
+          <h2>Evidence-based options, tailored to you</h2>
+          <p class="sub">
+            Some clients want talk therapy. Others need the nervous system to feel safe again first.
+            We plan around your needs, not a one-size-fits-all method.
+          </p>
+        </header>
 
-.hero-badges{
-  display:grid;
-  gap:.5rem;
-  margin-top: 1.1rem;
-}
-.badge{
-  display:flex;
-  align-items:flex-start;
-  gap:.65rem;
-  padding: .75rem .85rem;
-  border-radius: 16px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
-  color: rgba(255,255,255,.84);
-}
-.badge-dot{
-  width: 10px;
-  height: 10px;
-  margin-top: .35rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(242,193,78,.95), rgba(228,106,74,.75));
-  box-shadow: 0 10px 22px rgba(242,193,78,.18);
-  flex: 0 0 auto;
-}
+        <div class="grid cards-2">
+          <article class="card big">
+            <h3>EMDR for trauma & triggers</h3>
+            <p>
+              EMDR can help reduce the intensity of trauma responses, so reminders of the past stop hijacking the present.
+            </p>
+            <p class="mini">Quiet SEO: EMDR therapy in Clifton, NJ · Telehealth available</p>
+          </article>
 
-.hero-actions{
-  display:flex;
-  gap:.75rem;
-  flex-wrap:wrap;
-  margin-top: 1.25rem;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding: .92rem 1.05rem;
-  border-radius: 16px;
-  border: 1px solid transparent;
-  font-weight: 750;
-  letter-spacing: .01em;
-  transition: transform .15s ease, background .15s ease, border-color .15s ease;
-  will-change: transform;
-}
-.btn:active{ transform: translateY(1px); }
-.btn.primary{
-  background: linear-gradient(135deg, rgba(242,193,78,.95), rgba(228,106,74,.86));
-  color: rgba(11,19,36,.98);
-  box-shadow: 0 18px 40px rgba(0,0,0,.25);
-}
-.btn.primary:hover{
-  background: linear-gradient(135deg, rgba(242,193,78,1), rgba(228,106,74,.95));
-}
-.btn.ghost{
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.14);
-  color: rgba(255,255,255,.92);
-}
-.btn.ghost:hover{
-  border-color: rgba(242,193,78,.30);
-  background: rgba(242,193,78,.10);
-}
-.btn.small{
-  padding: .72rem .9rem;
-  border-radius: 14px;
-  font-weight: 750;
-}
+          <article class="card big">
+            <h3>Neurofeedback / EEG biofeedback</h3>
+            <p>
+              A non-invasive training approach that supports self-regulation, attention, and resilience.
+              Often explored alongside therapy for a more complete plan.
+            </p>
+            <p class="mini">Quiet SEO: neurofeedback in Clifton, NJ · attention · anxiety support</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.hero-trust{
-  display:grid;
-  gap:.75rem;
-  margin-top: 1.15rem;
-}
-.trust-card{
-  padding: 1rem 1.05rem;
-  border-radius: 18px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.10);
-}
-.trust-title{
-  font-weight: 800;
-  margin-bottom: .35rem;
-}
-.trust-text{
-  color: rgba(255,255,255,.72);
-  font-size: .98rem;
-}
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="shell">
+        <header class="section-head">
+          <h2>A practice built for real life</h2>
+          <p class="sub">
+            We’ve expanded our team to offer more availability, including lower-cost options with supervised interns.
+          </p>
+        </header>
 
-.hero-panel{
-  border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-  border: 1px solid rgba(255,255,255,.14);
-  box-shadow: var(--shadow);
-  padding: 1.15rem;
-  overflow:hidden;
-}
-.panel-top{
-  display:flex;
-  gap:.9rem;
-  align-items:flex-start;
-}
-.panel-icon{
-  width: 44px;
-  height: 44px;
-  border-radius: 16px;
-  display:grid;
-  place-items:center;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
-  color: rgba(122,166,255,.90);
-  flex: 0 0 auto;
-}
-.panel-icon svg{ width: 26px; height: 26px; }
-.panel-kicker{
-  color: rgba(255,255,255,.76);
-  font-size: .93rem;
-}
-.panel-title{
-  font-weight: 860;
-  font-size: 1.05rem;
-  margin-top: .2rem;
-}
-.panel-list{
-  margin: .95rem 0 0;
-  padding-left: 1.05rem;
-  color: rgba(255,255,255,.78);
-}
-.panel-list li{ margin: .45rem 0; }
-.panel-actions{
-  display:flex;
-  gap:.65rem;
-  flex-wrap:wrap;
-  margin-top: 1rem;
-}
-.panel-note{
-  margin-top: .9rem;
-  color: rgba(255,255,255,.66);
-  font-size: .96rem;
-}
+        <div class="grid team">
+          <article class="profile">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h3>Dr. Miriam Adler, PhD</h3>
+              <p class="role">Executive Director · Adult & older adolescent therapy</p>
+              <p>
+                A warm, proactive style with a focus on self-acceptance, constructive problem-solving,
+                communication, and practical momentum.
+              </p>
+            </div>
+          </article>
 
-.hero-stripe{
-  position:absolute;
-  inset: auto 0 0 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(242,193,78,.35), rgba(122,166,255,.25), transparent);
-}
+          <article class="profile">
+            <div class="avatar soft" aria-hidden="true"></div>
+            <div>
+              <h3>Associates & supervised interns</h3>
+              <p class="role">More availability · different price points</p>
+              <p>
+                You’ll be matched based on goals, preferences, and what feels easiest to start with.
+              </p>
+            </div>
+          </article>
+        </div>
 
-/* Sections */
-.section{
-  padding: 3rem 0;
-}
-.section.alt{
-  background:
-    radial-gradient(900px 420px at 20% 10%, rgba(242,193,78,.08), transparent 60%),
-    rgba(255,255,255,.02);
-  border-top: 1px solid rgba(255,255,255,.06);
-  border-bottom: 1px solid rgba(255,255,255,.06);
-}
+        <div class="note">
+          <p>
+            <strong>Affordable therapy option:</strong> supervised intern sessions are available for clients seeking lower-cost care.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.section-head{
-  display:grid;
-  gap:.65rem;
-  margin-bottom: 1.35rem;
-}
-.section-head p{
-  color: rgba(255,255,255,.74);
-  max-width: 72ch;
-}
+    <!-- TESTIMONIALS -->
+    <section class="section alt" id="feedback">
+      <div class="shell">
+        <header class="section-head">
+          <h2>What clients tend to notice first</h2>
+          <p class="sub">Short, human proof. No exaggerations. Just the feelings people actually describe.</p>
+        </header>
 
-/* Cards grid */
-.cards-grid{
-  display:grid;
-  gap: .9rem;
-}
-.card{
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: var(--radius-lg);
-  padding: 1.15rem 1.1rem;
-  box-shadow: 0 16px 40px rgba(0,0,0,.16);
-}
-.card-icon{
-  width: 42px;
-  height: 42px;
-  border-radius: 16px;
-  display:grid;
-  place-items:center;
-  background: rgba(255,255,255,.07);
-  border: 1px solid rgba(255,255,255,.12);
-  color: rgba(255,255,255,.92);
-  margin-bottom: .85rem;
-  font-size: 1.1rem;
-}
-.card p{
-  margin-top: .55rem;
-  color: rgba(255,255,255,.72);
-  max-width: 68ch;
-}
-.card.wide{
-  position:relative;
-  overflow:hidden;
-}
-.inline-cta{
-  margin-top: .9rem;
-}
-.link{
-  color: rgba(242,193,78,.95);
-  font-weight: 760;
-}
-.link:hover{ opacity:.92; }
+        <div class="grid cards-3">
+          <figure class="quote">
+            <blockquote>
+              “I felt understood quickly, and for the first time in a while I had a plan that made sense.”
+            </blockquote>
+            <figcaption>Adult client</figcaption>
+          </figure>
 
-/* Callout */
-.callout{
-  margin-top: 1.4rem;
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(700px 300px at 20% 20%, rgba(242,193,78,.18), transparent 55%),
-    radial-gradient(700px 300px at 80% 50%, rgba(122,166,255,.16), transparent 55%),
-    rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: var(--shadow-soft);
-}
-.callout-inner{
-  padding: 1.35rem 1.2rem;
-  display:grid;
-  gap:.65rem;
-}
-.callout-title{ font-weight: 880; }
-.callout-text{ color: rgba(255,255,255,.74); }
+          <figure class="quote">
+            <blockquote>
+              “The sessions were warm, but also practical. I started handling my week differently.”
+            </blockquote>
+            <figcaption>Telehealth client</figcaption>
+          </figure>
 
-/* Split layout */
-.split{
-  display:grid;
-  gap: 1.2rem;
-}
-.feature-list{
-  display:grid;
-  gap: .85rem;
-  margin-top: 1.1rem;
-}
-.feature{
-  padding: 1rem 1.05rem;
-  border-radius: 18px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.10);
-}
-.feature-title{ font-weight: 850; margin-bottom: .35rem; }
-.feature-text{ color: rgba(255,255,255,.72); }
+          <figure class="quote">
+            <blockquote>
+              “It wasn’t just talking. It was learning how to calm my body and stop spiraling.”
+            </blockquote>
+            <figcaption>Anxiety support</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-.split-panel{
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  padding: 1.15rem;
-  box-shadow: 0 16px 45px rgba(0,0,0,.18);
-  display:grid;
-  gap: .85rem;
-}
-.panel-block{
-  padding: .85rem .9rem;
-  border-radius: 16px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.10);
-}
-.panel-label{
-  color: rgba(255,255,255,.64);
-  font-size: .92rem;
-}
-.panel-value{
-  margin-top: .15rem;
-  font-weight: 820;
-  color: rgba(255,255,255,.92);
-}
-.panel-divider{
-  height: 1px;
-  background: rgba(255,255,255,.10);
-}
-.panel-mini{
-  color: rgba(255,255,255,.72);
-  font-size: .98rem;
-}
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="shell">
+        <header class="section-head">
+          <h2>Common questions</h2>
+          <p class="sub">The basics, answered clearly. This section also helps SEO without ruining the tone.</p>
+        </header>
 
-/* Profile */
-.profile{
-  display:grid;
-  gap: 1rem;
-}
-.profile-card{
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: 0 18px 55px rgba(0,0,0,.18);
-  padding: 1.15rem;
-  display:grid;
-  gap: 1rem;
-}
-.avatar{
-  width: 64px;
-  height: 64px;
-  border-radius: 22px;
-  display:grid;
-  place-items:center;
-  font-weight: 900;
-  letter-spacing: .02em;
-  color: rgba(11,19,36,.95);
-  background: linear-gradient(135deg, rgba(242,193,78,.95), rgba(228,106,74,.86));
-  box-shadow: 0 18px 40px rgba(0,0,0,.20);
-}
-.profile-role{
-  color: rgba(255,255,255,.72);
-  margin-top: .25rem;
-}
-.profile-text{
-  margin-top: .8rem;
-  color: rgba(255,255,255,.76);
-  max-width: 75ch;
-}
-.chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.5rem;
-  margin-top: .9rem;
-}
-.chip{
-  padding: .45rem .7rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  color: rgba(255,255,255,.84);
-  font-size: .92rem;
-}
-.profile-actions{
-  display:flex;
-  gap:.75rem;
-  flex-wrap:wrap;
-  margin-top: 1rem;
-}
-.tiny{
-  margin-top: .9rem;
-  color: rgba(255,255,255,.58);
-  font-size: .9rem;
-}
+        <div class="faq">
+          <details>
+            <summary>How long is a typical therapy session?</summary>
+            <div class="faq-body">
+              <p>Most sessions are 45 minutes. Longer sessions can be arranged when clinically appropriate.</p>
+            </div>
+          </details>
 
-.profile-side{
-  display:grid;
-  gap: .9rem;
-}
-.side-card{
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.10);
-  padding: 1.05rem;
-}
-.side-title{ font-weight: 880; margin-bottom: .55rem; }
-.side-text{ color: rgba(255,255,255,.72); }
-.side-list{
-  margin: 0;
-  padding-left: 1.05rem;
-  color: rgba(255,255,255,.74);
-}
-.side-list li{ margin: .45rem 0; }
+          <details>
+            <summary>Do you offer telehealth?</summary>
+            <div class="faq-body">
+              <p>Yes. We offer virtual appointments for clients who prefer online sessions or need flexibility.</p>
+            </div>
+          </details>
 
-/* Quotes */
-.quotes{
-  display:grid;
-  gap: .9rem;
-}
-.quote{
-  margin:0;
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  padding: 1.15rem 1.1rem;
-}
-.quote blockquote{
-  margin:0;
-  color: rgba(255,255,255,.82);
-  font-size: 1.02rem;
-}
-.quote figcaption{
-  margin-top: .85rem;
-  color: rgba(255,255,255,.66);
-  font-weight: 750;
-}
+          <details>
+            <summary>What issues do you help with most often?</summary>
+            <div class="faq-body">
+              <p>Anxiety and panic, trauma recovery, OCD support, attention/ADHD concerns, and mood-related challenges.</p>
+            </div>
+          </details>
 
-/* CTA band */
-.cta-band{
-  margin-top: 1.25rem;
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(700px 320px at 25% 20%, rgba(242,193,78,.18), transparent 58%),
-    radial-gradient(700px 320px at 75% 60%, rgba(122,166,255,.16), transparent 58%),
-    rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: var(--shadow-soft);
-  padding: 1.25rem 1.1rem;
-  display:grid;
-  gap: 1rem;
-}
-.cta-kicker{
-  color: rgba(255,255,255,.72);
-  font-weight: 750;
-}
-.cta-title{
-  font-weight: 920;
-  font-size: 1.25rem;
-  margin-top: .25rem;
-}
-.cta-text{
-  margin-top: .55rem;
-  color: rgba(255,255,255,.74);
-  max-width: 70ch;
-}
-.cta-actions{
-  display:flex;
-  gap:.75rem;
-  flex-wrap:wrap;
-}
+          <details>
+            <summary>Is neurofeedback right for me?</summary>
+            <div class="faq-body">
+              <p>It depends on your goals and history. We’ll discuss what you’re experiencing and suggest a plan that fits.</p>
+            </div>
+          </details>
 
-/* Contact */
-.contact-grid{
-  display:grid;
-  gap: 1rem;
-}
-.contact-card,
-.map-card{
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: 0 18px 55px rgba(0,0,0,.16);
-  overflow:hidden;
-}
-.contact-card{
-  padding: 1.15rem;
-}
-.contact-card h3{ margin-bottom: .85rem; }
-.contact-items{
-  display:grid;
-  gap: .85rem;
-}
-.c-item{
-  padding: .85rem .9rem;
-  border-radius: 16px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.10);
-}
-.c-label{
-  color: rgba(255,255,255,.64);
-  font-size: .92rem;
-}
-.c-value{
-  margin-top: .2rem;
-  color: rgba(255,255,255,.90);
-  font-weight: 760;
-}
-.c-value a{
-  text-decoration: underline;
-  text-decoration-color: rgba(242,193,78,.35);
-  text-underline-offset: 4px;
-}
-.contact-actions{
-  display:flex;
-  gap:.75rem;
-  flex-wrap:wrap;
-  margin-top: 1rem;
-}
-.social{
-  display:flex;
-  gap:.65rem;
-  flex-wrap:wrap;
-  margin-top: 1rem;
-}
-.social-link{
-  padding: .55rem .8rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  color: rgba(255,255,255,.86);
-}
-.social-link:hover{
-  border-color: rgba(242,193,78,.30);
-  background: rgba(242,193,78,.10);
-}
+          <details>
+            <summary>What should I write in the contact form?</summary>
+            <div class="faq-body">
+              <p>Just your name and the reason you’re reaching out, in broad terms. Please avoid including private medical details.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-.map-frame{
-  position: relative;
-  width:100%;
-  aspect-ratio: 16 / 11;
-  background: rgba(255,255,255,.04);
-  border-bottom: 1px solid rgba(255,255,255,.10);
-}
-.map-frame iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-.map-bottom{
-  padding: 1.05rem 1.1rem 1.15rem;
-  display:grid;
-  gap:.55rem;
-}
-.map-title{ font-weight: 900; }
-.map-text{ color: rgba(255,255,255,.74); }
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="shell">
+        <header class="section-head">
+          <h2>Request a consult</h2>
+          <p class="sub">
+            If you’re ready, send a message. If you’re not ready yet, that’s okay too.
+            Starting can be simple.
+          </p>
+        </header>
 
-/* Footer */
-.site-footer{
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding: 2.2rem 0 1.2rem;
-  background: rgba(0,0,0,.18);
-}
-.footer-inner{
-  display:grid;
-  gap: 1.2rem;
-}
-.footer-brand{
-  display:flex;
-  gap:.85rem;
-  align-items:flex-start;
-}
-.footer-mark{
-  width: 44px;
-  height: 44px;
-  border-radius: 16px;
-  display:grid;
-  place-items:center;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
-  color: rgba(242,193,78,.95);
-}
-.footer-mark svg{ width: 26px; height: 26px; }
-.footer-name{ font-weight: 900; }
-.footer-note{ color: rgba(255,255,255,.66); margin-top: .25rem; }
+        <div class="grid contact-grid">
+          <div class="contact-card">
+            <h3>Direct contact</h3>
 
-.footer-links{
-  display:flex;
-  gap: .9rem;
-  flex-wrap:wrap;
-  color: rgba(255,255,255,.80);
-}
-.footer-links a{
-  padding: .35rem .2rem;
-  border-radius: 10px;
-}
-.footer-links a:hover{ opacity:.92; }
+            <div class="contact-lines">
+              <p><span class="label">Email</span> <a href="mailto:drmiriam@miriamadlertherapy.com">drmiriam@miriamadlertherapy.com</a></p>
+              <p><span class="label">Phone</span> <a href="tel:+19738150777">(973) 815-0777</a> <span class="muted">ext. 101</span></p>
+              <p><span class="label">Location</span> 777 Passaic Avenue, 5th Floor, Clifton, NJ 07012</p>
+              <p class="muted">Mon–Thu 9:00am–9:30pm · Selected Sundays</p>
+            </div>
 
-.footer-meta{
-  color: rgba(255,255,255,.74);
-}
-.footer-meta a{
-  text-decoration: underline;
-  text-decoration-color: rgba(242,193,78,.30);
-  text-underline-offset: 4px;
-}
-.footer-bottom{
-  margin-top: 1.2rem;
-  padding-top: 1.1rem;
-  border-top: 1px solid rgba(255,255,255,.08);
-  color: rgba(255,255,255,.62);
-  font-size: .95rem;
-}
+            <div class="mini-band">
+              <p class="mini-title">Prefer telehealth?</p>
+              <p class="mini-sub">Ask about virtual sessions when you reach out.</p>
+            </div>
+          </div>
 
-/* Focus */
-:focus-visible{
-  outline: 2px solid rgba(242,193,78,.55);
-  outline-offset: 3px;
-  border-radius: 12px;
-}
+          <form class="form" action="#" method="post">
+            <div class="row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
 
-/* Desktop enhancements */
-@media (min-width: 900px){
-  .header-cta{ display:block; }
-  .nav-burger{ display:none; }
+            <div class="row">
+              <label>
+                <span>Phone (optional)</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+              <label>
+                <span>Telehealth?</span>
+                <select name="telehealth">
+                  <option value="unsure">Not sure yet</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </label>
+            </div>
 
-  .site-nav{
-    position: static;
-    display:flex !important;
-    padding: 0;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    gap: .4rem;
-    align-items:center;
-    width:auto;
-  }
-  .site-nav a{
-    background: transparent;
-    border: 1px solid transparent;
-    padding: .6rem .75rem;
-    border-radius: 14px;
-    color: rgba(255,255,255,.82);
-  }
-  .site-nav a:hover{
-    background: rgba(255,255,255,.06);
-    border-color: rgba(255,255,255,.12);
-  }
-  .site-nav .nav-cta{
-    background: rgba(242,193,78,.16);
-    border-color: rgba(242,193,78,.30);
-    color: rgba(255,255,255,.95);
-    padding: .65rem .9rem;
-  }
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="What would you like help with? (Please avoid private health details.)"></textarea>
+            </label>
 
-  .hero{ padding: 4.2rem 0 3rem; }
-  .hero-grid{
-    grid-template-columns: 1.25fr .95fr;
-    align-items:start;
-    gap: 1.4rem;
-  }
-  .hero-badges{ grid-template-columns: 1fr; }
+            <p class="privacy">
+              Please do not submit any Protected Health Information (PHI) through this form.
+            </p>
 
-  .hero-trust{
-    grid-template-columns: 1fr 1fr;
-  }
+            <button class="btn primary full" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-  .cards-grid{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-  .card.wide{
-    grid-column: span 3;
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    gap: 1rem;
-  }
-  .card.wide p{ max-width: 80ch; }
-  .card.wide .inline-cta{ margin-top: .2rem; }
-
-  .split{
-    grid-template-columns: 1.2fr .8fr;
-    gap: 1.2rem;
-    align-items:start;
-  }
-
-  .profile{
-    grid-template-columns: 1.15fr .85fr;
-    align-items:start;
-  }
-  .profile-card{
-    grid-template-columns: auto 1fr;
-    align-items:start;
-    gap: 1.1rem;
-  }
-
-  .quotes{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cta-band{
-    grid-template-columns: 1.1fr .9fr;
-    align-items:center;
-  }
-  .cta-actions{
-    justify-content:flex-end;
-  }
-
-  .contact-grid{
-    grid-template-columns: .95fr 1.05fr;
-    align-items:stretch;
-  }
-  .map-frame{ aspect-ratio: 16 / 10; }
-
-  .footer-inner{
-    grid-template-columns: 1.1fr .9fr 1fr;
-    align-items:start;
-  }
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce){
-  html{ scroll-behavior:auto; }
-  .btn{ transition:none; }
-}
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p class="foot-brand">Park Avenue Psychotherapy Associates</p>
+        <p class="foot-muted">Therapy & Neurofeedback · Clifton, NJ · Telehealth available</p>
+        <p class="foot-small">© <span id="y">2026</span> · Designed as a proposal demo</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
