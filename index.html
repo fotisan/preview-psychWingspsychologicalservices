@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,50 +9,37 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#fbfaf7" />
 
+  <!-- Local SEO: Schema Markup (JSON-LD) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Psychologist",
-  "name": "Miriam Adler Therapy",
-  "url": "https://www.miriamadlertherapy.com/",
-  "telephone": "+1-973-815-0777",
-  "email": "info@miriamadlertherapy.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "777 Passaic Avenue, 5th Floor",
-    "addressLocality": "Clifton",
-    "addressRegion": "NJ",
-    "postalCode": "07012",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    {
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "name": "Miriam Adler Therapy",
+    "url": "https://www.miriamadlertherapy.com/",
+    "telephone": "+19738150777",
+    "email": "info@miriamadlertherapy.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "777 Passaic Avenue, 5th Floor",
+      "addressLocality": "Clifton",
+      "addressRegion": "NJ",
+      "postalCode": "07012",
+      "addressCountry": "US"
+    },
+    "areaServed": {
       "@type": "AdministrativeArea",
       "name": "New Jersey"
-    }
-  ],
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday"
-      ],
-      "opens": "09:00",
-      "closes": "21:30"
-    }
-  ],
-  "priceRange": "$$",
-  "serviceType": [
-    "Therapy",
-    "Counseling",
-    "Neurofeedback",
-    "QEEG brain mapping",
-    "EMDR"
-  ]
-}
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "09:00",
+        "closes": "21:30"
+      }
+    ],
+    "description": "Therapy and neurofeedback practice in Clifton, NJ, offering evidence-based therapy and personalized neurofeedback. In-person in Clifton and telehealth across New Jersey."
+  }
   </script>
 
   <link rel="stylesheet" href="styles.css" />
@@ -77,7 +65,7 @@
           </span>
           <span class="brand-text">
             <span class="brand-name">Miriam Adler Therapy</span>
-            <span class="brand-sub">Therapy & Neurofeedback · Clifton, NJ</span>
+            <span class="brand-sub">Therapy &amp; Neurofeedback · Clifton, NJ</span>
           </span>
         </a>
 
@@ -373,14 +361,55 @@
               so we can tailor protocols to your profile.
             </p>
 
-            <img class="nf-side-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20820%20520%27%3E%0A%3Cdefs%3E%0A%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20x2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27rgba%2843%2C111%2C106%2C0.18%29%27/%3E%0A%3Cstop%20offset%3D%271%27%20stop-color%3D%27rgba%28199%2C125%2C43%2C0.18%29%27/%3E%0A%3C/linearGradient%3E%0A%3C/defs%3E%0A%3Crect%20width%3D%27820%27%20height%3D%27520%27%20rx%3D%2734%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.72%29%27/%3E%0A%3Crect%20x%3D%2718%27%20y%3D%2718%27%20width%3D%27784%27%20height%3D%27484%27%20rx%3D%2728%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Cpath%20d%3D%27M280%20350%0AC230%20350%2C%20205%20318%2C%20205%20280%0AC205%20238%2C%20236%20210%2C%20278%20210%0AC292%20178%2C%20324%20160%2C%20362%20160%0AC402%20140%2C%20456%20148%2C%20484%20186%0AC530%20188%2C%20574%20222%2C%20574%20270%0AC602%20294%2C%20602%20338%2C%20578%20360%0AC564%20386%2C%20532%20406%2C%20498%20398%0AC468%20436%2C%20404%20446%2C%20368%20418%0AC346%20432%2C%20312%20424%2C%20300%20398%0AC296%20382%2C%20290%20370%2C%20280%20350Z%27%0Afill%3D%27rgba%28255%2C255%2C255%2C0.80%29%27%20stroke%3D%27rgba%28230%2C223%2C211%2C0.95%29%27%20stroke-width%3D%274%27/%3E%0A%3Cpath%20d%3D%27M120%20420%20C%20200%20360%2C%20250%20470%2C%20330%20410%20C%20400%20360%2C%20450%20460%2C%20520%20410%20C%20590%20360%2C%20640%20440%2C%20710%20390%27%0Afill%3D%27none%27%20stroke%3D%27rgba%2843%2C111%2C106%2C0.42%29%27%20stroke-width%3D%278%27%20stroke-linecap%3D%27round%27/%3E%0A%3Cpath%20d%3D%27M120%20460%20C%20200%20400%2C%20250%20510%2C%20330%20450%20C%20400%20400%2C%20450%20500%2C%20520%20450%20C%20590%20400%2C%20640%20480%2C%20710%20430%27%0Afill%3D%27none%27%20stroke%3D%27rgba%28199%2C125%2C43%2C0.36%29%27%20stroke-width%3D%278%27%20stroke-linecap%3D%27round%27/%3E%0A%3Ccircle%20cx%3D%27350%27%20cy%3D%27260%27%20r%3D%2710%27%20fill%3D%27rgba%2843%2C111%2C106%2C0.26%29%27/%3E%0A%3Ccircle%20cx%3D%27430%27%20cy%3D%27240%27%20r%3D%2710%27%20fill%3D%27rgba%28199%2C125%2C43%2C0.30%29%27/%3E%0A%3Ccircle%20cx%3D%27480%27%20cy%3D%27290%27%20r%3D%2710%27%20fill%3D%27rgba%2843%2C111%2C106%2C0.22%29%27/%3E%0A%3C/svg%3E" alt="Neurofeedback illustration showing a calm brain map and training waves" loading="lazy" decoding="async" />
-            <p class="nf-side-cap">A quick visual for how brain-based training can be paired with therapy to support regulation.</p>
-
             <div class="list">
               <div class="li"><span class="dot" aria-hidden="true"></span> Individualized protocols and custom plans</div>
               <div class="li"><span class="dot" aria-hidden="true"></span> Can be paired with therapy and other supports</div>
               <div class="li"><span class="dot" aria-hidden="true"></span> Built around your goals, pace, and progress</div>
             </div>
+
+            <!-- NEW: fills the “empty” left column on desktop (no assets, inline SVG) -->
+            <figure class="nf-side" aria-label="Neurofeedback session illustration">
+              <div class="nf-side-visual" aria-hidden="true">
+                <svg viewBox="0 0 860 360" role="img" aria-hidden="true" focusable="false">
+                  <defs>
+                    <radialGradient id="ns1" cx="18%" cy="18%" r="70%">
+                      <stop offset="0" stop-color="rgba(43,111,106,0.22)"/>
+                      <stop offset="1" stop-color="rgba(43,111,106,0)"/>
+                    </radialGradient>
+                    <radialGradient id="ns2" cx="78%" cy="20%" r="75%">
+                      <stop offset="0" stop-color="rgba(199,125,43,0.22)"/>
+                      <stop offset="1" stop-color="rgba(199,125,43,0)"/>
+                    </radialGradient>
+                  </defs>
+
+                  <rect x="0" y="0" width="860" height="360" rx="28" fill="rgba(255,255,255,0.62)"/>
+                  <circle cx="190" cy="120" r="180" fill="url(#ns1)"/>
+                  <circle cx="690" cy="110" r="210" fill="url(#ns2)"/>
+
+                  <!-- “monitor” card -->
+                  <rect x="86" y="78" width="360" height="220" rx="22" fill="rgba(255,255,255,0.78)" stroke="rgba(230,223,211,0.95)"/>
+                  <rect x="118" y="118" width="296" height="18" rx="999" fill="rgba(22,22,24,0.12)"/>
+                  <rect x="118" y="150" width="240" height="14" rx="999" fill="rgba(22,22,24,0.10)"/>
+                  <rect x="118" y="176" width="270" height="14" rx="999" fill="rgba(22,22,24,0.08)"/>
+
+                  <!-- wave lines -->
+                  <path d="M120 234 C 170 206, 210 270, 258 240 C 300 214, 332 260, 380 232"
+                        fill="none" stroke="rgba(43,111,106,0.38)" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M120 262 C 172 234, 212 300, 260 270 C 304 244, 334 292, 382 264"
+                        fill="none" stroke="rgba(199,125,43,0.34)" stroke-width="8" stroke-linecap="round"/>
+
+                  <!-- “client + chair” abstract -->
+                  <rect x="520" y="210" width="260" height="78" rx="22" fill="rgba(255,255,255,0.74)" stroke="rgba(230,223,211,0.95)"/>
+                  <circle cx="590" cy="186" r="34" fill="rgba(255,255,255,0.80)" stroke="rgba(230,223,211,0.95)"/>
+                  <path d="M562 206 C 574 190, 606 190, 618 206" fill="none" stroke="rgba(22,22,24,0.16)" stroke-width="6" stroke-linecap="round"/>
+                  <rect x="634" y="166" width="126" height="14" rx="999" fill="rgba(22,22,24,0.10)"/>
+                  <rect x="634" y="190" width="160" height="14" rx="999" fill="rgba(22,22,24,0.08)"/>
+                </svg>
+              </div>
+              <figcaption>
+                Comfortable, noninvasive sessions in a calm setting. The plan stays personalized as your brain responds.
+              </figcaption>
+            </figure>
           </div>
 
           <!-- NEUROFEEDBACK IMAGE (inline SVG) -->
@@ -767,7 +796,7 @@
           <strong>Miriam Adler Therapy</strong>
           <div class="muted">777 Passaic Avenue, 5th Floor, Clifton, NJ 07012</div>
         </div>
-        <div class="muted">Therapy & Neurofeedback · Telehealth across New Jersey</div>
+        <div class="muted">Therapy &amp; Neurofeedback · Telehealth across New Jersey</div>
       </div>
     </div>
   </footer>
