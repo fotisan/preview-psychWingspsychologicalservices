@@ -1,3 +1,4 @@
+/* styles.css */
 :root{
   --bg: #fbfaf7;
   --bg2:#f4efe6;
@@ -5,13 +6,13 @@
   --text:#161618;
 
   /* Contrast upgrade */
-  --muted:#3f4148;       /* darker than before for readability */
-  --muted2:#2e3036;      /* for small UI labels when needed */
+  --muted:#3f4148;
+  --muted2:#2e3036;
 
   --border:#e6dfd3;
 
-  --accent:#c77d2b;      /* warm */
-  --accent2:#2b6f6a;     /* calm teal */
+  --accent:#c77d2b;
+  --accent2:#2b6f6a;
 
   --shadow: 0 12px 34px rgba(17, 17, 20, 0.10);
   --shadow2: 0 14px 40px rgba(17, 17, 20, 0.14);
@@ -111,15 +112,16 @@ img{ max-width:100%; height:auto; display:block; }
 .nav{ display:flex; align-items:center; justify-content:flex-end; flex:1; }
 .nav-inline{ display:none; gap:14px; align-items:center; }
 
-.nav-inline a{
+/* FIX: desktop nav link styles should NOT override the CTA */
+.nav-inline a:not(.nav-cta){
   font-size:0.95rem;
   color: rgba(22,22,24,0.92);
   padding:10px 10px;
   border-radius:12px;
 }
-.nav-inline a:hover{ background: rgba(43,111,106,0.10); }
+.nav-inline a:not(.nav-cta):hover{ background: rgba(43,111,106,0.10); }
 
-/* CTA in nav: stronger, clearer */
+/* CTA in nav: keep identical look across mobile + desktop */
 .nav-cta{
   background: linear-gradient(135deg, rgba(43,111,106,0.96), rgba(43,111,106,0.78));
   border:1px solid rgba(43,111,106,0.38);
@@ -131,6 +133,13 @@ img{ max-width:100%; height:auto; display:block; }
 }
 .nav-cta:hover{
   background: linear-gradient(135deg, rgba(43,111,106,1), rgba(43,111,106,0.84));
+}
+
+/* ensure CTA never gets overridden */
+.nav-inline .nav-cta{
+  color:#fff;
+  padding:10px 12px;
+  border-radius:14px;
 }
 
 .nav-details{ position:relative; }
@@ -215,9 +224,9 @@ h1{
 .subhead{
   margin:0 0 22px;
   font-size: clamp(1.03rem, 2.5vw, 1.2rem);
-  color: rgba(22,22,24,0.90); /* stronger contrast */
+  color: rgba(22,22,24,0.90);
   max-width: 62ch;
-  line-height: 1.62;         /* fixes “tight” feel */
+  line-height: 1.62;
 }
 
 .hero-ctas{
@@ -227,7 +236,7 @@ h1{
   margin-bottom: 14px;
 }
 
-/* CTA buttons: clearer + higher contrast */
+/* CTA buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -289,11 +298,10 @@ h1{
   box-shadow: var(--shadow);
 }
 
-/* fix: caption spacing + line-height so text is not “stuck” to image */
 .media-caption{
   display:grid;
   gap:10px;
-  padding: 18px 18px 12px;  /* more bottom padding */
+  padding: 18px 18px 12px;
 }
 .pill{
   width:max-content;
@@ -467,6 +475,25 @@ h2{
   border:1px solid rgba(43,111,106,0.28);
   margin-top: 6px;
   flex:0 0 auto;
+}
+
+/* NEW: fills empty left column */
+.nf-side{
+  margin: 16px 0 0;
+  border-radius: 18px;
+  overflow:hidden;
+  border:1px solid rgba(230,223,211,0.94);
+  background: rgba(255,255,255,0.76);
+}
+.nf-side-visual{
+  padding: 12px 12px 0;
+}
+.nf-side-visual svg{ width:100%; height:auto; display:block; }
+.nf-side figcaption{
+  padding: 10px 12px 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .nf-hero{ display:grid; gap:12px; }
